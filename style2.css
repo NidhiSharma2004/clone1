@@ -53,7 +53,6 @@ header{
 }
 header .text{
     padding: 2rem;
-    border: 1px solid;
 }
 header .text h3{
     font-size: 1.5rem;
@@ -65,7 +64,7 @@ header .text h1{
     color: whitesmoke;
     margin-top: .5rem;
 }
-header .text .cta {
+header .text .cta, .text1 .cta {
     font-size: 1rem;
     border: 1px solid;
     padding: .2rem;
@@ -74,6 +73,11 @@ header .text .cta {
     color: whitesmoke;
     margin-top: 1rem;
 }
+.text1 .cta{
+    color :whitesmoke;
+    background-color: #c21949;
+}
+
 nav ul li::after{
     content: '';
     width: 0%;
@@ -117,34 +121,108 @@ header .text h1:hover{
     color: #c21949;
     transition: .4s ease;
 }
+.upcoming-event-container{
+    /* border: 2px solid orangered; */
+    height: 34rem;
+    background-color: #ebe0df;
+}
 .upcoming-event{
     height: 17rem;
-    border: 2px solid green;
-    justify-content: center;
-    margin-top: 1rem;
+    width: 90%;
+    margin: auto;
 }
-.upcoming-event .text-event{
-    border: 1px soli blue;
+.text-event {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
+    margin: 1.2rem auto;
+    width: 29rem;
+}
+.text-event h1::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #c21949;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.text-event h1:hover::after{
+     width: 100%;
 }
 .upcoming-event .upcoming-event-image{
-    border: 1px solid red;
     width: 100%;
-    height: 89%;
+    height: 100%;
     display: flex;
 }
-.upcoming-event-image img{
+.upcoming-event-image .images2,.images1{
+    height: 100%;
+    width: 50%;
+    margin:0 3rem;
+}
+.upcoming-event-image .images1 img, .images2 img{
     height: 100%;
     width: 100%;
+    border-radius: 25px;
+}
+.text1{
+    text-align: center;
+    margin-top: .8rem;
+}
+.text1 h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.text1 p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-top: .6rem;
+}
+.text1 button{
+    margin-top: .6rem;
+}
+.text1 .cta:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+}
+.upcoming-event-image img:hover{
+    box-shadow: 0 0 30px 0 ;
+    transition: .5s;
+    transform: scale(.9);
+}
+.text1:hover{
+    transform: scale(1.2);
+    color: #c21949;
+    transition: .5s;
+}
+.explore-world{
+    background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    width: 100%;
+    height: 19rem;
+}
+.explore-world .images{
+    width: 60%;
+    display: flex;
+    height: 100%;
+    border: 2px solid orange;
+}
+.explore-world .images .img1, .img2, .img3{
+    width: 20%;
+    height: 60%;
+    /* border: ; */
 }
 
-
-
-
-
-
-
+.explore-world .images .img1 img, .img2 img, .img3 img{
+    width: 100%;
+    height: 100%;
+}
+.explore-world .explore-world-text{
+    border:2px solid green
+}
 
 
 
@@ -194,4 +272,91 @@ header .text h1:hover{
     nav ul li a{
         font-size: 1rem;
     }
+    .upcoming-event-container{
+        height: 73rem;
+        border: 1px solid orangered;
+    }
+    .text-event{
+        font-size: 1.4rem;
+        width: 20rem;
+    }
+    .upcoming-event{
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+    }
+    .upcoming-event-image{
+        flex-direction: column;
+        border: 1px solid blue;
+        margin: auto;
+        height: 100%;
+    }
+    .upcoming-event-image .images1{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin:0 auto;
+        border:2px solid green;
+        height: 50% ;
+    }
+    .upcoming-event-image .images2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        height: 50%;
+        border: 2px solid green;
+    }
+    .upcoming-event-image .images1 img{
+        height: 70%;
+    }
+    .upcoming-event-image .images2 img{
+        height: 70%;
+    }
+    .text1 .cta:hover{
+        transform: none;
+        transition: none;
+        cursor: none;
+    }
+    .text1:hover{
+        transform: scale(1.1);
+        color: #c21949;
+        transition: .5s;
+    }
+    .text1 h3{
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    .text1 p{
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: .6rem;
+    }
+    
 }
+
+@media only screen and (max-width:550px){
+    .upcoming-event-image{
+        flex-direction: column;
+    }
+    .upcoming-event-image .images1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .upcoming-event-image .images2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* margin-top: 10rem; */
+        margin-left: 0;
+        
+    }
+    .text1:hover{
+        /* transform: scale(1.1); */
+        color: #c21949;
+        transition: .5s;
+    }
+}
+
