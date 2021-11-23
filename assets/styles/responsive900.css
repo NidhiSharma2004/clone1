@@ -103,11 +103,11 @@
     .explore-world .explore-world-text{
          position: relative;
         top :20px;
-        border: 1px solid green;
+        /* border: 1px solid green; */
         /* height: 15%; */
     }
     .explore-world .images{
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         /* flex-direction: column; */
         padding-right: 0rem;
         margin-top: 2rem;
@@ -118,35 +118,27 @@
         display: none;
     }
     .explore-world .images .img2{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: 14.5rem;
         width: 50%;
         position: none;
         top: 0;
+        padding: 1rem;
     }
     .explore-world .images .img3{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: 14.5rem;
         width: 50%;
         position: none;
         top: 0;
+        padding: 1rem;
     }
-
-    /* .explore-world .images .img3, .img2{
-        position: none;
-        top:0;
-        width: 50%;
-        margin: 1rem 1rem 1rem .5rem;
-  } 
-    .explore-world .images .img1{
-        display: none;
-    }
-    .explore-world .images .img3{
-        position:none;
-        top: 0;
-        margin: .5rem 1rem 1rem 1rem;
-        width: 50%;
-    } */
+    .explore-world .images .img2 img:hover{
+        box-shadow: 0 0 20px 0 #1b2433;
+      }
+      .explore-world .images .img3 img:hover{
+       box-shadow: 0 0 20px 0 #1b2433;
+     }
 }
 
 

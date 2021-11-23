@@ -128,7 +128,7 @@ header .text h1:hover{
 }
 .upcoming-event-container{
     /* border: 2px solid orangered; */
-    height: 34rem;
+    height: 38rem;
     background-color: #ebe0df;
 }
 .upcoming-event{
@@ -219,6 +219,10 @@ header .text h1:hover{
     align-items: center;
     padding-right: 1rem;
 }
+.explore-world .images img:hover{
+    box-shadow: 0 0 20px 0 #232526;
+    transition: .3s;
+}
 .explore-world .images .img1, .img2, .img3{
     width: 50%;
     height: 60%;
@@ -301,55 +305,4 @@ header .text h1:hover{
 
 
 
-
-@media only screen and (max-width:550px){
-     .main-container{  
-        max-width: 96.6vw;
-    }
-    .upcoming-event-image{
-        flex-direction: column;
-    }
-    .upcoming-event-image .images1{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .upcoming-event-image .images2{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        /* margin-top: 10rem; */
-        margin-left: 0 auto;
-        
-    }
-    .text1:hover{
-        /* transform: scale(1.1); */
-        color: #c21949;
-        transition: .5s;
-    }
-    .explore-world{
-        flex-direction: column;
-        /* height: 50rem; */
-    }
-    .explore-world .explore-world-text{
-        position: relative;
-        /* top: 20px; */
-        height: 15%;
-    }
-    .explore-world-text h1{
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-    }
-    .explore-world-text p{
-        font-size: 1rem;
-        padding-bottom: 0rem;
-    }
-    .explore-world .images{
-        flex-direction: column;
-        padding-right: 0rem;
-        margin-top: 3rem;
-    }
-    
-}
 
