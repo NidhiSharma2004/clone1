@@ -7,4 +7,4 @@ This is a Coffee shop Landing Page built with HTML & CSS Only
 
 ## Here is a ScreenShot of the Website
 
-<img  src='https://github.com/sauravsharmaz/Saurav-Coffee-wala/blob/main/assets/images/sauravsharmaz.github.io_Saurav-Coffee-wala_.png' />
+<img  src='./assets/images/moto.png' />
